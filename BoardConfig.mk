@@ -155,9 +155,7 @@ TW_USE_TOOLBOX := true
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 200
 TW_USE_SAMSUNG_HAPTICS := true
-# Remove these flash when building SHRP
-TW_Y_OFFSET := 80
-TW_H_OFFSET := -80
+
 
 # TWRP Settings
 TW_NO_REBOOT_BOOTLOADER := true
@@ -174,5 +172,22 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_MTP_DEVICE := "Galaxy A03s"
 TW_DEVICE_VERSION := v1_Alexandre
 
-# Making the recovery.img smaller
-BOARD_HAS_NO_REAL_SDCARD := true
+
+# SHRP
+SHRP_PATH := device/samsung/a03s
+SHRP_MAINTAINER := Alexandre
+SHRP_DEVICE_CODE := a03s
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 0
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_AB := false
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
+SHRP_ALT_REBOOT := true
+SHRP_STATUSBAR_RIGHT_PADDING := 48
+SHRP_STATUSBAR_LEFT_PADDING := 48
